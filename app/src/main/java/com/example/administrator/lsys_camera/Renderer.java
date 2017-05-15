@@ -55,6 +55,7 @@ import static javax.microedition.khronos.egl.EGL10.EGL_NONE;
 import static javax.microedition.khronos.egl.EGL10.EGL_NO_CONTEXT;
 
 
+//TESTEST
 public class Renderer  implements Runnable, TextureView.SurfaceTextureListener {
 
     private static final int EGL_WINDOW_BIT = 4;
