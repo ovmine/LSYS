@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    // 커스텀 색상
+    <color name="NiceStyle">#B2DFDB</color>
+    <color name="SwitchOnGIF">#26A69A</color>
+    <color name="SwitchOffGIF">#BDBDBD</color>
+    <color name="SwitchThumbGIF">#80CBC4</color>
+</resources>

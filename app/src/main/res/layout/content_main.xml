@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.lsys_camera.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!--카메라 뷰-->
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_above="@+id/id_main_menu"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--하단 메뉴, 메인 메뉴-->
+    <RelativeLayout
+        android:id="@+id/id_main_menu"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/NiceStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="40dp">
+
+            <ImageView
+                android:id="@+id/id_icon_collage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="0.2"/>
+            <ImageView
+                android:id="@+id/id_icon_gallery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="0.2"/>
+            <ImageView
+                android:id="@+id/id_icon_circle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="0.2"/>
+            <ImageView
+                android:id="@+id/id_icon_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="0.2"/>
+            <ImageView
+                android:id="@+id/id_icon_filter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--상단 메뉴, 서브 메뉴-->
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/id_icon_timer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_timer"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:id="@+id/id_icon_flash"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_flash"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:id="@+id/id_icon_change"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_change"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--스위치 버튼-->
+    <RelativeLayout
+        android:layout_above="@+id/id_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Switch
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id_switch_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:track="@drawable/switch_track_selector"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:text=""
+            android:textOn=""
+            android:textOff="" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/id_icon_timertext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>
